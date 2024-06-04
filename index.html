@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/estilo.css">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <div class="container-formulario">
+        <form action="#" method="post" class="formulario">
+            <div class="container-img">
+                <img src="imagens/notbook.png" alt="mobile">
+            </div>
+
+            <div class="form-container">
+                <div class="form-header">
+                    <h1 class="form-header-title">Cadastre-se</h1>
+                    <input type="button" value="Entrar" class="btn form-header-btn">
+                </div>
+
+                <div class="form-container-inputs">
+                    <div class="form-container-inputs-box">
+                        <label for="nome">Primeiro Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu primeiro nome">
+                    </div>
+                    <div class="form-container-inputs-box">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+                    </div>
+                </div>
+
+                <div class="form-container-inputs">
+                    <div class="form-container-inputs-box">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite o seu email">
+                    </div>
+                    <div class="form-container-inputs-box">
+                        <label for="telefone">Celular</label>
+                        <input type="number" name="telefone" id="telefone" placeholder="(xx) xxxx-xxxx">
+                    </div>
+                </div>
+
+                <div class="form-container-inputs">
+                    <div class="form-container-inputs-box">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite a sua senha">
+                    </div>
+                    <div class="form-container-inputs-box">
+                        <label for="confSenha">Confirme a sua senha</label>
+                        <input type="password" name="confSenha" id="confSenha" placeholder="Confirme sua senha">
+                    </div>
+                </div>
+
+                <div class="form-container-genero">
+                    <h3>Gênero</h3>
+                    <div class="form-container-genero-box">
+                        <label for="fem">
+                            <input type="radio" name="sexo" id="fem"> Feminino
+                        </label>
+    
+                        <label for="masc">
+                            <input type="radio" name="sexo" id="masc"> Masculino
+                        </label>
+    
+                        <label for="outros">
+                            <input type="radio" name="sexo" id="outros"> Outros
+                        </label>
+    
+                        <label for="nao">
+                            <input type="radio" name="sexo" id="nao"> Prefiro não dizer
+                        </label>
+                    </div>
+                </div>
+    
+                <div class="form-termos">
+                    <div>
+                        <label for="aceitarTermos">
+                            <input type="checkbox" name="aceitarTermos" id="aceitarTermos"> Aceito os termos de cadastro
+                        </label>
+                    </div>
+                </div>
+    
+                <button type="submit">Continuar</button>
+            </div>
+           
+        </form>
+    </div>
+</body>
+</html>
