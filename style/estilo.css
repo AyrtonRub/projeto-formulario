@@ -14,13 +14,14 @@ body {
     align-items: center;
     height: 100vh;
     font-size: 0.75rem;
+    position: relative;
 }
 
 .container-formulario {
     max-width: 87.5em;
     width: 90%;
-    height: 28.12rem;
-    box-shadow: -2px 7px 20px ;
+    height: auto;
+    box-shadow: -2px 7px 20px;
 }
 
 .formulario {
@@ -28,7 +29,7 @@ body {
     height: 100%;
 }
 
-.form-container{
+.form-container {
     width: 50%;
     background-color: white;
     padding: 2rem;
@@ -46,7 +47,7 @@ body {
 .container-img {
     width: 50%;
     background-color: #8395a7;
-    
+
 }
 
 .container-img img {
@@ -97,12 +98,12 @@ body {
 
 .btn:hover {
     cursor: pointer;
-    background-color: #7748d698 ;
+    background-color: #7748d698;
 }
 
 .form-header-btn {
     width: 80px;
-    height: 30px;           
+    height: 30px;
 }
 
 .form-container-inputs-box {
@@ -120,6 +121,10 @@ body {
     color: #ccc;
 }
 
+.caracteres {
+    margin-bottom: .5rem;
+}
+
 .form-container-genero {
     display: flex;
     flex-direction: column;
@@ -132,6 +137,14 @@ body {
     justify-content: space-between;
 }
 
+.form-header,
+.form-container-inputs,
+.container-inputs,
+.form-container-genero-box,
+.form-termos {
+    margin-bottom: .5rem;
+}
+
 @media screen and (max-width: 62em) {
     .container-img {
         display: none;
@@ -139,6 +152,7 @@ body {
 
     .container-formulario {
         max-width: 43.75em;
+        height: auto;
     }
 
     .form-container {
@@ -163,7 +177,7 @@ body {
         margin-bottom: .5rem;
     }
 
-    .container-formulario  {
+    .container-formulario {
         height: auto;
     }
 
@@ -174,4 +188,12 @@ body {
     .form-termos {
         margin-bottom: .5rem;
     }
+}
+
+.mensagem {
+    position: absolute;
+    bottom: 0 ;
+    left: 0;
+    width: 300px;
+    background-color: #8395a7;
 }
