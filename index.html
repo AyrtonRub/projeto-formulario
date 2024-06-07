@@ -7,10 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/estilo.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <title>Formulário de cadastro</title>
 </head>
 <body>
     <div class="container-formulario">
+
+        
         <form action="#" method="post" class="formulario">
             <div class="container-img">
                 <img src="imagens/notbook.png" alt="mobile">
@@ -56,7 +59,7 @@
                     </div>
                     <label for="text">Fale sobre você</label>
                     <textarea name="text" id="text" rows="5" maxlength="255" ></textarea>
-                    <div class="contadorStrings"><span>255</span> Caracteres</div>
+                    <div class="contadorStrings"><span></span> Caracteres</div>
                 </div>
 
                 <div class="form-container-genero">
@@ -88,11 +91,16 @@
                     </div>
                 </div>
     
-                <button type="submit" class="btn" id="btn">Continuar</button>
+                <button type="submit" class="btn" id="btn" >Continuar</button>
             </div>
            
         </form>
     <!-- <div class="mensagem">Digite um valor</div> -->
+    </div>
+
+    <div id="feedbackMessage" class="">
+        <p>aa</p>
+        <button><span class="fa fa-close" id="close"></span></button>
     </div>
     <script src="js/formulario.js"></script>
 </body>
