@@ -6,8 +6,9 @@
     
     formulario.addEventListener('submit', function(e) {
         if(textoInput.value ===""){ 
-            showErrorMessage('Prencha todos os campos')
-            textoInput.focus()
+            showErrorMessage('Prencha todos os campos', function() {
+                textoInput.focus()
+            })
         }
         e.preventDefault() /*Previne o comportamento padrão*/
     })
@@ -19,7 +20,7 @@
     const closeBtn = document.querySelector('#close')
     console.log(closeBtn)
 
-    function showErrorMessage(msg) {
+    function showErrorMessage(msg, cb) {
         feedbackMessage.classList.add('show')
         mensageErro.textContent = msg
 
@@ -28,6 +29,10 @@
             feedbackMessage.classList.remove('show')
             closeBtn.removeEventListener('click', hideErrorMessage)
             closeBtn.removeEventListener('keyup', fecharComEsc)
+
+            if(typeof cb == 'function') {
+                cb()
+            }
         }
 
         function fecharComEsc(e) {
